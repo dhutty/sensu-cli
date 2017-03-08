@@ -28,7 +28,7 @@ setup(
     classifiers=[
       'Development Status :: 3 - Alpha',
       'Intended Audience :: Developers',
-      'Programming Language :: Python :: 3',
+      'Programming Language :: Python :: 2',
     ],
     keywords='',
     packages=find_packages(exclude=['docs', 'tests*']),
@@ -36,5 +36,10 @@ setup(
     author='Duncan Hutty',
     install_requires=install_requires,
     dependency_links=dependency_links,
-    author_email='dhutty@allgoodbits.org'
+    author_email='dhutty@allgoodbits.org',
+    entry_points={
+        'console_scripts': [
+            'sensu=sensu.cli:cli',
+            ],
+        },
 )
