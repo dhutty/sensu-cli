@@ -26,12 +26,25 @@ Or clone the repo:
 Usage
 -----
 
-Contributing
-------------
+See the built-in help:
 
-TBD
+    $ sensu --help
+    Usage: sensu [OPTIONS] COMMAND [ARGS]...
 
-Example
--------
+    Options:
+      -l, --log-level [ERROR|INFO|DEBUG]
+                                      Specify log verbosity.
+      -u, --username TEXT             Sensu username.
+      -p, --password TEXT             Sensu password.
+      --scheme [http|https]           Specify protocol  [default: http]
+      --server TEXT                   Specify the Sensu server  [default:
+                                      localhost]
+      --port INTEGER                  Specify the Sensu port  [default: 4567]
+      --help                          Show this message and exit.
 
-TBD
+    Commands:
+      info       Show info about the Sensu API
+      silence    Create Silence
+      silenced   List Silences
+      subs       Show info on subscriptions
+      unsilence  Clear silencing

@@ -27,7 +27,10 @@ setup(
     license='BSD',
     classifiers=[
       'Development Status :: 3 - Alpha',
-      'Intended Audience :: Developers',
+      'Environment :: Console',
+      'Operating System :: OS Independent',
+      'Topic :: System :: Monitoring',
+      'Intended Audience :: System Administrators',
       'Programming Language :: Python :: 2',
     ],
     keywords='',

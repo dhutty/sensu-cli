@@ -33,7 +33,7 @@ def cli(ctx, log_level, scheme, server, port, username=None, password=None):
     logging.basicConfig(level=log_level)
 
 
-@cli.command('subs', short_help="Show info on a host's subs")
+@cli.command('subs', short_help="Show info on subscriptions")
 @click.option(
     '--host', default=socket.gethostname(), help='Specify sensu target client', show_default=True, multiple=True)
 @pass_api
@@ -79,7 +79,7 @@ def unsilence(api, **kwargs):
 @cli.command('info', short_help="Show info about the Sensu API")
 @pass_api
 def info(api):
-    print(api.get_info())
+    pp(api.get_info())
 
 
 if __name__ == '__main__':
