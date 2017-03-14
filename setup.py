@@ -32,6 +32,7 @@ setup(
       'Topic :: System :: Monitoring',
       'Intended Audience :: System Administrators',
       'Programming Language :: Python :: 2',
+      'Programming Language :: Python :: 3',
     ],
     keywords='',
     packages=find_packages(exclude=['docs', 'tests*']),
